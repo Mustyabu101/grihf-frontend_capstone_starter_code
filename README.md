@@ -1,36 +1,87 @@
 # StayHealthy Frontend Development Capstone
 
 ## Project Overview
-StayHealthy is a healthcare web application designed to help users access doctor search, appointments, login, registration, and patient-related features.
+
+StayHealthy is a healthcare demonstration application developed
+for the IBM Skills Network Frontend Development Capstone.
+
+It provides patient registration, login, a patient dashboard,
+doctor search, appointment requests and patient reviews.
+
+## Application Repository
+
+The completed application source code is available at:
+
+https://github.com/Mustyabu101/med_appt
+
+The application is developed on the
+feature/secure-cookie-authentication branch.
+
+This starter repository contains the capstone README.
+The application source code and dependencies are maintained
+in the med_appt repository.
+
+## Technologies Used
+
+- React and JavaScript
+- Vite, HTML and CSS
+- Vercel serverless functions
+- Neon PostgreSQL
+- JWT-based authentication
 
 ## Setup Instructions
 
 ### Prerequisites
+
 - Node.js and npm
 - Git
 
 ### Installation
-1. Clone the repository.
-2. Open the project folder in a terminal.
-3. Install dependencies:
 
-```bash
-npm install
-```
+Clone the application repository:
 
-4. Start the development server:
+    git clone -b feature/secure-cookie-authentication https://github.com/Mustyabu101/med_appt.git
 
-```bash
-npm run dev
-```
+Enter the project directory:
 
-5. Open the local URL shown in the terminal.
+    cd med_appt
 
-## Technologies
-- React
-- JavaScript
-- HTML and CSS
-- Vite
+Install dependencies:
+
+    npm ci
+
+Start the frontend development server:
+
+    npm run dev
+
+The local Vite development server does not automatically
+provide the Vercel serverless API endpoints.
+
+## Production Build
+
+Run:
+
+    npm run build
+
+The frontend output is generated in the dist directory.
+
+## Environment Variables
+
+The deployed authentication and appointment services require:
+
+- NEON_POSTGRES_URL
+- JWT_SECRET
+
+Never commit actual credentials or secrets.
+
+## Project Limitations
+
+Doctor listings are demonstration data.
+Appointment requests do not represent confirmed bookings
+with real medical professionals.
 
 ## Purpose
-This project demonstrates frontend development skills through a healthcare application interface.
+
+This project demonstrates frontend development,
+authentication integration, and healthcare application
+interface design for educational assessment.
